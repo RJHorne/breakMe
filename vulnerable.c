@@ -5,11 +5,12 @@
 void insecure_copy(char* input) {
     char buffer[16];
     strcpy(buffer, input); 
+    printf("Username: %s \n",buffer);
 }
 
 void unsafe_input() {
     char credentials[32];
-    printf("Enter admin credentials: ");
+    printf("Enter admin password: ");
     gets(credentials); 
 }
 
